@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="100" onload="addtest()">
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-1 col-xs-1 col-4 " id="myScrollspy">
+                <ul class="nav nav-pills flex-column ">
+                    <a class=" t11" href="#section1"><img src="./images/logoos.png" style="height: 60px; width: 60px;" alt=""></a>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" onmouseover="hovers(this)" onmouseout="mouseout(this)" href="#section1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onmouseover="hovers(this)" onmouseout="mouseout(this)" href="#section2">Tilapia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onmouseover="hovers(this)" onmouseout="mouseout(this)" href="#section3">Matoke</a>
+                    </li>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onmouseover="hovers(this)" onmouseout="mouseout(this)" href="#section4">Menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" onmouseover="hovers(this)" onmouseout="mouseout(this)" data-toggle="dropdown" href="#">Contact</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" onmouseover="hovers(this)" onmouseout="mouseout(this)" href="#section41">contact</a>
+                            <a class="dropdown-item" onmouseover="hovers(this)" onmouseout="mouseout(this)" href="#section42">footer</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="col-sm-11 col-xs-11 col-8">
+
+                <div id="section1" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <h1>Section 1</h1>
+                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                </div>
+                <!--Us section-->
+                <div id="us">
+                    <span class="intro-heading" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <h1>- who are we -</h1>
+                    </span>
+                    <span class="intro-paragraph" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia doloremque eligendi quia cumque obcaecati inventore porro. In animi explicabo, nam corrupti reiciendis accusamus eligendi earum quae quisquam ipsa quidem id nihil
+                            doloribus autem illo ad eveniet deserunt, assumenda unde rem suscipit ipsum. Quis praesentium vel asperiores incidunt at vero, dolorem facere ipsam id quam consectetur delectus unde commodi exercitationem? Magni recusandae,
+                            sed tempora hic libero molestias beatae unde consequuntur facere. In, laudantium voluptas? Veritatis corporis architecto similique aspernatur, iusto optio ratione reiciendis, in autem quidem nobis enim neque, officiis rerum
+                            impedit fuga soluta reprehenderit illo harum temporibus labore? Facilis magnam consectetur molestiae rem distinctio quasi veritatis eos quibusdam quas dicta, vel aliquid earum, sequi illo consequuntur ratione ex, alias officia?
+                            Nemo obcaecati quod autem sit, explicabo nostrum molestiae fugit, eum ipsa soluta possimus aspernatur, repellat quae culpa modi qui perspiciatis. Distinctio ullam aliquid perspiciatis vero sint soluta rerum inventore, omnis
+                            ipsum deleniti ipsa repellat dicta maiores laborum laboriosam odio cupiditate porro debitis. Commodi laborum dignissimos accusamus est ad aperiam, repellat reprehenderit delectus magni. Explicabo, ad ut fugiat accusamus commodi
+                            impedit quisquam possimus, iste asperiores odit doloremque. Illum nihil amet atque consequuntur, illo, facere quidem vitae quia id doloribus omnis porro!</p>
+                    </span>
+                    <span class="text-block">
+                       <p><a href="#"><i class='fab fa-facebook-square' style='font-size:36px'></i> @samaki_kali</a></p>
+                    <p></p><a href="#"><i class='fab fa-instagram' style='font-size:36px;color:red'></i> samaki kali and kienyeji cafe</a></p>
+                    </span>
+                </div>
+
+                <!--Section 2 Tilapia-->
+                <div id="section2" data-aos="zoom-in-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="carousel-section">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./images/rest1.jpg" alt="First slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Grilled</h5>
+                                        <p>450 ksh</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/nyamchom1.jpg" alt="Second slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>...</h5>
+                                        <p>...</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/rest3.jpg" alt="Third slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>...</h5>
+                                        <p>...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card1head">
+                            <h1>Tilapia</h1>
+                        </div>
+                        <div class="cardcontent">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium vitae delectus, soluta praesentium nihil expedita quas. Fugit, nemo ad molestias adipisci natus nesciunt quaerat temporibus corrupti excepturi asperiores
+                                assumenda dolorum nulla magnam architecto. Neque, tenetur perspiciatis. Esse laboriosam dolores iusto quasi eaque itaque numquam porro, voluptates dignissimos blanditiis aperiam hic alias sint, facilis cupiditate delectus
+                                suscipit saepe reprehenderit! Animi, ab.</p>
+                        </div>
+
+                        <button class="btn btn-danger">click more</button>
+                    </div>
+                </div>
+
+                <!--Section 3 matoke-->
+                <div id="section3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+                    <div class="carousel-section">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./images/ugali1.jpg" alt="First slide">
+                                    <img src="..." alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>1</h5>
+                                        <p>...</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/rest1.jpg" alt="Second slide">
+                                    <img src="..." alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>2</h5>
+                                        <p>...</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/rest3.jpg" alt="Third slide">
+                                    <img src="..." alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>.3</h5>
+                                        <p>...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card1head">
+                            <h1>Matoke</h1>
+                        </div>
+                        <div class="cardcontent">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium vitae delectus, soluta praesentium nihil expedita quas. Fugit, nemo ad molestias adipisci natus nesciunt quaerat temporibus corrupti excepturi asperiores
+                                assumenda dolorum nulla magnam architecto. Neque, tenetur perspiciatis. Esse laboriosam dolores iusto quasi eaque itaque numquam porro, voluptates dignissimos blanditiis aperiam hic alias sint, facilis cupiditate delectus
+                                suscipit saepe reprehenderit! Animi, ab.</p>
+                        </div>
+
+                        <button class="btn btn-danger">click more</button>
+                    </div>
+                </div>
+
+                <!--Section 4 part menu 1-->
+                <div id="section4" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+                    <div class="carousel-section">
+                        <div id="carouselExampleIndicator" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./images/rest1.jpg" alt="First slide">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/nyamchom1.jpg" alt="Second slide">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/rest3.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card1head">
+                            <h1>Menu</h1>
+                        </div>
+                        <div class="cardcontent">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium vitae delectus, soluta praesentium nihil expedita quas. Fugit, nemo ad molestias adipisci natus nesciunt quaerat temporibus corrupti excepturi asperiores
+                                assumenda dolorum nulla magnam architecto. Neque, tenetur perspiciatis. Esse laboriosam dolores iusto quasi eaque itaque numquam porro, voluptates dignissimos blanditiis aperiam hic alias sint, facilis cupiditate delectus
+                                suscipit saepe reprehenderit! Animi, ab.</p>
+                        </div>
+
+                        <button class="btn btn-danger">click more</button>
+                    </div>
+                </div>
+
+                <!--section 4 part 1-->
+                <div id="section41" class="bg-danger">
+
+                    <h1>contacts are here</h1>
+                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                </div>
+
+                <!--section 4 part 2-->
+                <div id="section42">
+                    <div class="carousel-section">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./images/rest1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/rest3.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/ugali1.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card1head">
+                            <h1>Contact</h1>
+                        </div>
+                        <div class="cardcontent">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium vitae delectus, soluta praesentium nihil expedita quas. Fugit, nemo ad molestias adipisci natus nesciunt quaerat temporibus corrupti excepturi asperiores
+                                assumenda dolorum nulla magnam architecto. Neque, tenetur perspiciatis. Esse laboriosam dolores iusto quasi eaque itaque numquam porro, voluptates dignissimos blanditiis aperiam hic alias sint, facilis cupiditate delectus
+                                suscipit saepe reprehenderit! Animi, ab.</p>
+                        </div>
+
+                        <button class="btn btn-danger">click more</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 3000
+        })
+
+        function hovers(obj) {
+            obj.classList.remove('mouseout')
+            obj.classList.add('hhover')
+        }
+
+        function mouseout(obj) {
+            obj.classList.add('mouseout')
+            obj.classList.remove('hhover')
+        }
+
+        function addtest(thiis) {
+            document.querySelector('ul').classList.add('tests')
+        }
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

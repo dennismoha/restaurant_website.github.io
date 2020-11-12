@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap');
+:root {
+    --monte: 'Montserrat', sans-serif;
+    --montesemibold: 'Montserrat', sans-serif;
+}
+
+@mixin backgroundimage($image) {
+    background: ($image)no-repeat center center/cover;
+}
+
+@mixin sectionskeleton() {
+    box-shadow: 5px 10px 18px #888888;
+    margin-bottom: 10px;
+    position: relative;
+    .carousel-section {
+        height: 550px;
+        width: 70%;
+        margin: auto;
+        position: relative;
+        top: 100px;
+        overflow: hidden;
+        .slide {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@mixin cards($rightt,
+$leftt) {
+    width: 35%;
+    position: absolute;
+    left: $leftt;
+    // left: auto;
+    // right: 0%;
+    right: $rightt;
+    height: 70%;
+    top: 20%;
+    display: flex;
+    margin-right: 50px;
+    padding: 45px 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    border-width: 0.1px;
+    border-color: rgba(133, 89, 25, 0.57);
+    border-radius: 0px;
+    background-color: #fff;
+    box-shadow: 0 0 25px 1px rgba(10, 10, 10, 0.5);
+    opacity: 1;
+    perspective: 1000px;
+    color: #333;
+    .card1head {
+        margin-top: 0px;
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        font-family: 'Bodoniflf roman', sans-serif;
+        font-size: 50px;
+        font-weight: 400;
+        text-transform: uppercase;
+        h1 {
+            line-height: 44px;
+        }
+    }
+    .cardcontent {
+        padding: 35px 20px;
+        font-family: Lora, sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        text-align: justify;
+        p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    }
+    button {
+        width: 100%;
+        border-radius: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.hhover {
+    color: blue;
+    transform: rotate(60deg);
+    background-color: pink;
+    transition-timing-function: ease-in-out;
+    transition: background-color, transform 6s;
+}
+
+.mouseout {
+    color: blue;
+    transform: rotate(0deg);
+    background-color: none;
+    transition-timing-function: ease-in-out;
+    transition: background-color, transform 6s;
+}
+
+body {
+    position: relative;
+    line-height: 1.6;
+    background: #ffffff;
+}
+
+ul.nav-pills {
+    top: 20px;
+    position: fixed;
+}
+
+div.col-8 div {
+    height: 100vh;
+}
+
+nav {
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.flex-column {
+    background-color: transparent;
+    transform: translate(-100px);
+    li {
+        padding: 20px 0;
+        &:first-child {
+            padding-top: 4px;
+        }
+    }
+    .t11 {
+        padding: 40px 0 0 20px;
+        margin-bottom: 0;
+    }
+}
+
+#section1 {
+    width: 100%;
+    background: url(../images/nyamchom1.jpg)no-repeat center center/cover;
+}
+
+.tests {
+    transform: translate(0px);
+    transition: transform 3s ease-in;
+}
+
+#us {
+    margin-top: 100px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .intro-heading {
+        font-family: var(--montesemibold);
+        font-weight: 200;
+        margin-bottom: 50px;
+        h1 {
+            font-size: 38px;
+            line-height: 4px;
+            text-transform: uppercase;
+        }
+    }
+    p {
+        max-width: 800px;
+        font-family: Lora, sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        text-align: justify;
+    }
+    .text-block {
+        display: block;
+    }
+}
+
+#section2 {
+    @include sectionskeleton();
+    .card {
+        @include cards(0,
+        auto);
+    }
+}
+
+#section3 {
+    @include sectionskeleton();
+    .card {
+        @include cards(auto,
+        0);
+        margin-left: 50px;
+    }
+}
+
+#section4 {
+    @include sectionskeleton();
+    .card {
+        @include cards(0,
+        auto);
+        margin-left: 50px;
+    }
+}
+
+
+/* section42*/
+
+#section42 {
+    @include sectionskeleton();
+    .card {
+        @include cards(0,
+        auto);
+        margin-left: 50px;
+    }
+}
+
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+// Optional
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/nav";
+//@import "../node_modules/bootstrap/scss/navbar";
+//@import "../node_modules/bootstrap/scss/utilities";
+//@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
